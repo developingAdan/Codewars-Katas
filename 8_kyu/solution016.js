@@ -31,7 +31,7 @@ function derive(coefficient,exponent) {
 }
 
 
-// OTHER SOLUTIONS
+// OTHER SOLUTIONScxc
 
 // function derive(coefficient,exponent) {
 //     return `${coefficient*exponent}x^${exponent-1}`
