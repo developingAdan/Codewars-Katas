@@ -4,7 +4,7 @@
 
 // nameShuffler('john McClane'); => "McClane john"
 
-
+//update
 
 // MY SOLUTION
 function nameShuffler(str){
