@@ -34,3 +34,16 @@ function filterLongWords(sentence, n) {
 //     }
 //     return longer
 //   }
+
+
+
+function sortReindeer(reindeerNames) {
+    
+    let sorted = reindeerNames.sort((firstItem, nextItem) => {
+        return firstItem[0]
+    })
+
+  }
+
+console.log(sortReindeer(["Dasher Tonoyan", "Dancer Moore", "Prancer Chua", "Vixen Hall",
+"Comet Karavani", "Cupid Foroutan", "Donder Jonker", "Blitzen Claus"]))
