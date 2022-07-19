@@ -32,6 +32,7 @@ function filterLongWords(sentence, n) {
 //         longer.push(sent[i])
 //       }
 //     }
+      // and this
 //     return longer
 //   }
 
