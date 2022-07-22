@@ -54,7 +54,7 @@ function DNAStrand(dna){
 //     G: 'C',
 // }
 
-
+// edited this i swear im coding today!!
 // var pairs = {'A':'T','T':'A','C':'G','G':'C'};
 
 // function DNAStrand(dna){
