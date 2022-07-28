@@ -45,7 +45,6 @@ function createPhoneNumber(numbers) {
 //         + numbers.substring(6);
 //   }
 
-
 // function createPhoneNumber(numbers){
 //     return numbers.join('').replace(/(...)(...)(.*)/, '($1) $2-$3');
 //   }
