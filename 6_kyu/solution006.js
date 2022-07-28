@@ -1,32 +1,35 @@
-// // complete the function
-// function solution(string) {
-//     let splitted = string.split('')
+// Title -- Count characters in your string
 
-//     let findingIndex = splitted.findIndex(item => {
-//         if (item.toUpperCase() === item) {
-//             return item
-//         }
-//     })
+// The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
 
-//     // let splicingAddingSpace = splitted.splice(findingIndex, 1, ' ')
-
-//     splitted.splice(findingIndex, 0, ' ')
-//     let joined = splitted.join('')
-
-//     return joined
-//     // return splitted
-// }
+// What if the string is empty? Then the result should be empty object literal, {}.
 
 
-console.log(solution('camelCasing'))
-console.log(solution('camelCasingTest')) 
-console.log(solution('identifier'))
+// MY SOLUTION
+function count(string) {  
+    // The function code should be here
+    let splitted = string.split('')
 
-function queueTime(customers, n) {
-    //TODO
+    let reduced = splitted.reduce((accum, currentVal) => {
+        if (!accum[currentVal]) {
+            accum[currentVal] = 0;
+        }
+        accum[currentVal]++;
+        return accum
+    }, {})
 
-    return [[...customers], n] 
-
+    return reduced
   }
 
-  console.log(queueTime([5, 3, 4], 1))
+console.log(count('aba'))
+
+
+// OTHER SOLUTIONS
+
+// function count (string) {  
+//     var count = {};
+//     string.split('').forEach(function(s) {
+//        count[s] ? count[s]++ : count[s] = 1;
+//     });
+//     return count;
+//   }
