@@ -21,7 +21,7 @@ function count(string) {
     return reduced
   }
 
-console.log(count('aba'))
+// console.log(count('aba'))
 
 
 // OTHER SOLUTIONS
@@ -33,3 +33,35 @@ console.log(count('aba'))
 //     });
 //     return count;
 //   }
+
+
+function wave(str) {
+    // Code here
+    let splitted = str.split('')
+    let arr = []
+    let otherArr = []
+
+    for (i = 0; i < splitted.length; i++) {
+        if (splitted[i].toUpperCase() !== splitted[i]) {
+            arr.push(splitted[i].toUpperCase())
+        }
+    }
+
+    
+    let doingTheThing = arr.toString().replace(/,/g, '').substring(0, arr.length).toLowerCase()
+
+    return doingTheThing
+
+}
+  console.log(wave('hello'))
+
+  const teams = ['Denver Broncos', 'New York Jets', 'Dallas Cowboys', 'Seattle Seahawks']
+
+  console.log(teams.sort())
+
+
+  const numbers = [1, 5, 33, 71, 201, 8]
+
+  const numSorted = numbers.sort((a, b) => a - b)
+
+  console.log(numSorted)
