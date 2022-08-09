@@ -26,7 +26,7 @@ function getMiddle(str) {
     //Code goes here!
     return str.substr(Math.ceil(str.length / 2 - 1), str.length % 2 === 0 ? 2 : 1)
 }
-
+//edit
 
 // OTHER SOLUTIONS:
 
